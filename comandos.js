@@ -142,6 +142,77 @@ const produtos = [
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Kit%20Potes%20Hermeticos).",
 
+    },
+    {
+        nome: "Kit Cozinha",
+        valor: "R$ 61,99",
+        imagem: "img/kitcozinha.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Kit%20Cozinha).",
+
+    },
+    {
+        nome: "Jogo de Toalhas",
+        valor: "R$ 95,00",
+        imagem: "img/toalha.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Toalhas).",
+
+    },
+    {
+        nome: "Conjunto de Jarras",
+        valor: "R$ 70,00",
+        imagem: "img/conjuntoJarra.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Conjunto%20De%20Jarras).",
+
+    },
+    {
+        nome: "Jogo de Pano de Pratos",
+        valor: "R$ 35,00",
+        imagem: "img/jogopanodeprato.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Pano%20De%20Pratos).",
+
+    },    {
+        nome: "Jogo de Banheiro",
+        valor: "R$ 70,00",
+        imagem: "img/kitbanheiro.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Baheiro).",
+
+    },
+    {
+        nome: "Kit Potes Mantimentos",
+        valor: "R$ 75,00",
+        imagem: "img/kitpotesmantimento.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Kit%20Pote%20Mantimentos).",
+
+    },
+    {
+        nome: "Jogo de Tapetes",
+        valor: "R$ 90,00",
+        imagem: "img/jogotapete1.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Tapetes).",
+
+    },
+    {
+        nome: "Jogo de Copos",
+        valor: "R$ 40,00",
+        imagem: "img/kitcopo.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Copos).",
+
+    },
+    {
+        nome: "Processador",
+        valor: "R$ 25,00",
+        imagem: "img/processador.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Processador%20De%20Alimentos).",
+
     }
     // Adicione novos produtos aqui facilmente
 ];
