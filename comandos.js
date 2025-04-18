@@ -1,6 +1,6 @@
 function atualizarContador() {
     // Defina a data final (Ano, Mês (0-11), Dia, Hora, Minuto, Segundo)
-    var dataFinal = new Date(2025, 12, 9, 23, 59, 59); // 20 de março de 2025 às 23:59:59
+    var dataFinal = new Date(2025, 4, 25, 17, 0, 0); // 20 de março de 2025 às 23:59:59
 
     var agora = new Date();
     var diferenca = dataFinal - agora; // Diferença em milissegundos
@@ -164,8 +164,8 @@ produtos.forEach((produto, index) => {
           <div class="modal-conteudo">
             <p class="descricao__textoP">Escolha uma opção:</p>
             <div class="modal-botoes">
-              <a href="${produto.pagamento}" target="_blank" class="botao-modal-opcao">💳 Pagar agora</a>
-              <a href="${produto.whatsapp}" target="_blank" class="botao-modal-opcao botao-whatsapp">📱 Reservar via WhatsApp e pagar depois!</a>
+              <a href="${produto.pagamento}" target="_blank" class="botao-modal-opcao">💳 Presentear agora!</a>
+              <a href="${produto.whatsapp}" target="_blank" class="botao-modal-opcao botao-whatsapp">📱 Reservar via WhatsApp e Presentear depois!</a>
             </div>
             <button class="modal-fechar" onclick="fecharModal(${index})">Fechar</button>
           </div>
