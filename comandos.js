@@ -1,6 +1,6 @@
 function atualizarContador() {
     // Defina a data final (Ano, Mês (0-11), Dia, Hora, Minuto, Segundo)
-    var dataFinal = new Date(2025, 2, 19, 17, 0, 0); // 20 de março de 2025 às 23:59:59
+    var dataFinal = new Date(2025, 9, 20, 17, 0, 0); // 20 de março de 2025 às 23:59:59
 
     var agora = new Date();
     var diferenca = dataFinal - agora; // Diferença em milissegundos
