@@ -64,14 +64,6 @@ const produtos = [
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Panela%20de%20Pressao).",
     },
     {
-        nome: "Jogo de Copos",
-        valor: "R$ 184,00",
-        imagem: "../img/jogocopos2.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20de%20Copos).",
-        
-    },
-    {
         nome: "Micro Ondas",
         valor: "R$ 74,00",
         imagem: "../img/microondas.png", 
@@ -160,14 +152,6 @@ const produtos = [
 
     },
     {
-        nome: "Conjunto de Jarras",
-        valor: "R$ 70,00",
-        imagem: "img/conjuntoJarra.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Conjunto%20De%20Jarras).",
-
-    },
-    {
         nome: "Jogo de Pano de Pratos",
         valor: "R$ 35,00",
         imagem: "img/jogopanodeprato.png",
@@ -199,6 +183,46 @@ const produtos = [
 
     },
     {
+        nome: "Processador",
+        valor: "R$ 25,00",
+        imagem: "img/processador.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Processador%20De%20Alimentos).",
+
+    },
+    {
+        nome: "Cortador Multifunção",
+        valor: "R$ 50,00",
+        imagem: "img/cortadorMulti.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Cortador%20Multifunção).",
+
+    },
+    {
+        nome: "Jogo de Tabuleiros",
+        valor: "R$ 100,00",
+        imagem: "img/tabuleiros.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Tabuleiros).",
+
+    },
+    {
+        nome: "Taças de Sobremesa",
+        valor: "R$ 65,00",
+        imagem: "img/JogoTacaSobremesa.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Taças%20De%@Sobremesa).",
+
+    },
+    {
+        nome: "Jogo de Copos",
+        valor: "R$ 184,00",
+        imagem: "../img/jogocopos2.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20de%20Copos).",
+        
+    },
+    {
         nome: "Jogo de Copos",
         valor: "R$ 40,00",
         imagem: "img/kitcopo.png",
@@ -207,11 +231,11 @@ const produtos = [
 
     },
     {
-        nome: "Processador",
-        valor: "R$ 25,00",
-        imagem: "img/processador.png",
+        nome: "Conjunto de Jarras",
+        valor: "R$ 70,00",
+        imagem: "img/conjuntoJarra.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Processador%20De%20Alimentos).",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Conjunto%20De%20Jarras).",
 
     }
     // Adicione novos produtos aqui facilmente
