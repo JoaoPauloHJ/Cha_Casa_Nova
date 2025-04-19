@@ -78,7 +78,6 @@ legend {
     color: var(--botao-cor-nova);
 }
 
-
 .container__botaoEnviar {
 
     background-color: rgba(255, 255, 255, 0.9);
@@ -98,7 +97,10 @@ legend {
     border-radius: 10px;
     text-decoration: none;
 }
-
+.container__botaoEnviar[disabled] {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
 .container__botaoEnviar:hover {
     background-color: var(--botao-cor-nova);
     color: var(--cor-de-fundo);
@@ -128,6 +130,8 @@ legend {
     box-shadow: 0 4px 15px rgb(0, 0, 0);
     transition: transform 0.3s ease;
 }
+
+
 
 @media only screen and (max-width: 950px){
     .box {

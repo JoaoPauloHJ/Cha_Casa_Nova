@@ -692,25 +692,32 @@ body {
     margin-top: 20px;
 }
 
+/* Estilo para as mensagens */
 .mensagem {
     margin-bottom: 20px;
     padding: 15px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-
-.mensagem-nome {
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
+    word-wrap: break-word; /* Quebra palavras muito longas */
+    overflow-wrap: break-word; /* Alternativa moderna */
+    white-space: pre-line; /* Preserva quebras de linha e espaços */
 }
 
 .mensagem-texto {
     color: #555;
     margin-bottom: 5px;
     line-height: 1.5;
+    max-height: 200px; /* Altura máxima antes do scroll */
+    overflow-y: auto; /* Adiciona scroll vertical se necessário */
+    padding: 5px;
 }
+.mensagem-nome {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
 
 .mensagem-data {
     font-size: 0.8em;

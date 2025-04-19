@@ -73,6 +73,7 @@
             const data = new Date().toLocaleString();
 
             // Salva no Firebase
+            // Salva no Firebase
             mensagensRef.push({
                 nome: nome,
                 celular: celular,
@@ -81,6 +82,9 @@
             }).then(() => {
                 alert('Mensagem enviada com sucesso!');
                 document.getElementById('mensagemForm').reset();
+                setTimeout(() => {
+                    window.location.href = "index.html#mensagens";
+                },)
             }).catch(error => {
                 alert('Erro ao enviar mensagem: ' + error.message);
             });

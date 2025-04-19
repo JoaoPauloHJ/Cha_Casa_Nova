@@ -1,53 +1,120 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Cadastro</title>
-        <style>
 
-        </style>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/confirmacao.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <title>Cadastro</title>
+    <style>
 
-    <body>
-        <div class="box">
-            <form action="">
-                <fieldset>
-                    <legend><b>Confirmação de Presença</b></legend>
-                    <br>
-                    <div class="inputBox">
-                        <input type="text" name="nome" id="nome" class="inputUser" required>
-                        <label for="nome" class="labelInput">Nome Completo</label>
-                    </div>
-                    <br><br>
-                    <div class="inputBox">
-                        <input type="text" name="email" id="email" class="inputUser" required>
-                        <label for="email" class="labelInput">Email</label>
-                    </div>
-                    <br><br>
-                    <div class="inputBox">
-                        <input type="tel" name="celular" id="celular" class="inputUser" required>
-                        <label for="celular" class="labelInput">Celular</label>
-                    </div>
-                    <br><br>
-                    <div class="inputBox">
-                        <input type="text" name="estado" id="estado" class="inputUser" required>
-                        <label for="estado" class="labelInput">Quem vai te acompanhar?</label>
-                    </div>
-                    <br><br>
-                    <button id="enviarBtn" class="container__botaoEnviar" >Enviar</button>
-                    
-                </fieldset>
-                
-            </form>
-            
-        </div>
-        
-        <a href="index.html" class="container__botaoVoltar">Voltar</a>
-        
-    </body>
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/confirmacao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Confirmação de Presença</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome Completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="celular" id="celular" class="inputUser" required>
+                    <label for="celular" class="labelInput">Celular</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="companhia" id="companhia" class="inputUser" required>
+                    <label for="companhia" class="labelInput">Quem vai te acompanhar?</label>
+                </div>
+                <br><br>
+                <button id="enviarBtn" class="container__botaoEnviar">Enviar</button>
+
+            </fieldset>
+
+        </form>
+
+    </div>
+
+    <a href="index.html" class="container__botaoVoltar">Voltar</a>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database-compat.js"></script>
+    <script>
+        // Configuração do Firebase - VERIFIQUE SE ESTÁ EXATAMENTE IGUAL
+        const firebaseConfig = {
+            apiKey: "AIzaSyDa-mCyN9ypQqUDvZNCKjIjryknwTIQPyY",
+            authDomain: "cha-panela-45b3c.firebaseapp.com",
+            databaseURL: "https://cha-panela-45b3c-default-rtdb.firebaseio.com",
+            projectId: "cha-panela-45b3c",
+            storageBucket: "cha-panela-45b3c.firebasestorage.app",
+            messagingSenderId: "67640604092",
+            appId: "1:67640604092:web:e793278ead88c340ff27b9"
+        };
+
+        // Inicialize o Firebase
+        // Inicialize o Firebase
+        firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+        // Verificação de carregamento
+        if (typeof firebase === 'undefined') {
+            alert("Firebase não carregou! Verifique sua conexão ou scripts");
+        } else {
+            alert("Firebase carregado com sucesso!");
+        }
+
+        // Modifique o evento para prevenir o comportamento padrão do formulário
+        document.getElementById('enviarBtn').addEventListener('click', async function (e) {
+            e.preventDefault(); // Isso é ESSENCIAL
+
+            const enviarBtn = document.getElementById('enviarBtn');
+            enviarBtn.disabled = true;
+            enviarBtn.textContent = 'Enviando...';
+
+            try {
+                const nome = document.getElementById('nome').value;
+                const email = document.getElementById('email').value;
+                const celular = document.getElementById('celular').value;
+                const acompanhantes = document.getElementById('companhia').value;
+                const data = new Date().toLocaleString();
+
+                // Verifique se todos os campos estão preenchidos
+                if (!nome || !email || !celular || !acompanhantes) {
+                    throw new Error("Por favor, preencha todos os campos");
+                }
+
+                await confirmacoesRef.push({
+                    nome: nome,
+                    email: email,
+                    celular: celular,
+                    acompanhantes: acompanhantes,
+                    data: data
+                });
+
+                alert('Presença confirmada com sucesso! Obrigado!');
+                window.location.href = "index.html";
+
+            } catch (error) {
+                alert('Erro: ' + error.message);
+            } finally {
+                enviarBtn.disabled = false;
+                enviarBtn.textContent = 'Enviar';
+            }
+        });
+    </script>
+
+</body>
+
 </html>

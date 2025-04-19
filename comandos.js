@@ -26,6 +26,13 @@ var intervalo = setInterval(atualizarContador, 1000);
 // Executa a função imediatamente para evitar espera de 1s
 atualizarContador();
 
+// Verifica se veio do formulário de mensagem
+if(window.location.hash === '#mensagens' || document.referrer.includes('mensagem.html')) {
+    setTimeout(() => {
+        const mensagensSection = document.getElementById('mensagens');
+        mensagensSection.scrollIntoView({ behavior: 'smooth' });
+    }, 300); // Pequeno delay para carregar as mensagens
+}
 
 const produtos = [
     {
@@ -307,7 +314,7 @@ function fecharModal(index) {
                     mensagemElement.className = 'mensagem';
                     mensagemElement.innerHTML = `
                     <p class="mensagem-nome"><strong>${msg.nome}</strong></p>
-                    <p class="mensagem-texto">${msg.mensagem}</p>
+                    <p class="mensagem-texto">${msg.mensagem.replace(/\n/g, '<br>')}</p>
                     <p class="mensagem-data">${msg.data}</p>
                     <hr>
                 `;
