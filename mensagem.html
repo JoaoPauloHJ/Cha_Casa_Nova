@@ -1,80 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Mensagem</title>
-        <style>
 
-        </style>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/mensagem.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <title>Mensagem</title>
+    <style>
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/mensagem.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-    <body>
-        <div class="box">
-            <form id="mensagemForm">
-                <fieldset>
-                    <legend><b>Digite sua Mensagem</b></legend>
-                    <br>
-                    <div class="inputBox">
-                        <input type="text" name="nome" id="nome" class="inputUser" required>
-                        <label for="nome" class="labelInput">Nome</label>
-                    </div>
-                    <br><br>
-                    <div class="inputBox">
-                        <input type="tel" name="celular" id="celular" class="inputUser" required>
-                        <label for="celular" class="labelInput">Celular</label>
-                    </div>
-                    <br><br>
-                    <div class="inputBox2">
-                        <textarea name="mensagem" id="mensagem" class="inputUser2" required></textarea>
-                        <label for="mensagem" class="labelInput2">Mensagem</label>
-                    </div>
-                    <br>
-                    <button id="enviarBtn" class="container__botaoEnviar" type="submit">Enviar</button>
-                    <br><br>
-                </fieldset>
-            </form>
-            
-            <script>
-                document.getElementById("mensagemForm").addEventListener("submit", function(event) {
-                    event.preventDefault();
-                
-                    let nome = document.getElementById("nome").value;
-                    let mensagem = document.getElementById("mensagem").value;
-                
-                    fetch("https://bancorailway-production.up.railway.app", { // Use a URL do seu backend
-                        method: "POST",
-                        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                        body: `nome=${encodeURIComponent(nome)}&mensagem=${encodeURIComponent(mensagem)}`
-                    })
-                    .then(response => response.json())
-                    .then(() => {
-                        carregarMensagens();
-                    });
-                });
-                
-                function carregarMensagens() {
-                    fetch("https://bancorailway-production.up.railway.app") // Use a URL do seu backend
-                    .then(response => response.json())
-                    .then(data => {
-                        let mensagensDiv = document.getElementById("mensagens");
-                        mensagensDiv.innerHTML = "";
-                        data.forEach(msg => {
-                            mensagensDiv.innerHTML += `<p><strong>${msg.nome}</strong>: ${msg.mensagem} <small>${msg.data}</small></p>`;
-                        });
-                    });
-                }
-                
-                carregarMensagens();
-                </script>
-            
-        </div>
- 
-        <a href="index.html" class="container__botaoVoltar">Voltar</a>
-        
-    </body>
+    <!-- Adicione os scripts do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <form id="mensagemForm">
+            <fieldset>
+                <legend><b>Digite sua Mensagem</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="celular" id="celular" class="inputUser" required>
+                    <label for="celular" class="labelInput">Celular</label>
+                </div>
+                <br><br>
+                <div class="inputBox2">
+                    <textarea name="mensagem" id="mensagem" class="inputUser2" required></textarea>
+                    <label for="mensagem" class="labelInput2">Mensagem</label>
+                </div>
+                <br>
+                <button id="enviarBtn" class="container__botaoEnviar" type="submit">Enviar</button>
+                <br><br>
+            </fieldset>
+        </form>
+    </div>
+
+    <a href="index.html" class="container__botaoVoltar">Voltar</a>
+
+    <script>
+        // Inicialize o Firebase com sua configuração
+        const firebaseConfig = {
+            apiKey: "AIzaSyDa-mCyN9ypQqUDvZNCKjIjryknwTIQPyY",
+            authDomain: "cha-panela-45b3c.firebaseapp.com",
+            projectId: "cha-panela-45b3c",
+            storageBucket: "cha-panela-45b3c.firebasestorage.app",
+            messagingSenderId: "67640604092",
+            appId: "1:67640604092:web:e793278ead88c340ff27b9"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+        // Referência para o banco de dados
+        const database = firebase.database();
+        const mensagensRef = database.ref('mensagens');
+
+        // Enviar mensagem
+        document.getElementById('mensagemForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const nome = document.getElementById('nome').value;
+            const celular = document.getElementById('celular').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const data = new Date().toLocaleString();
+
+            // Salva no Firebase
+            mensagensRef.push({
+                nome: nome,
+                celular: celular,
+                mensagem: mensagem,
+                data: data
+            }).then(() => {
+                alert('Mensagem enviada com sucesso!');
+                document.getElementById('mensagemForm').reset();
+            }).catch(error => {
+                alert('Erro ao enviar mensagem: ' + error.message);
+            });
+        });
+    </script>
+</body>
+
 </html>

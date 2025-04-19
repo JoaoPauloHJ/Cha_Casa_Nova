@@ -278,4 +278,43 @@ function fecharModal(index) {
     document.getElementById(`modal-${index}`).style.display = "none";
 }
 
+        // Inicialize o Firebase com sua configuração
+        const firebaseConfig = {
+            apiKey: "AIzaSyDa-mCyN9ypQqUDvZNCKjIjryknwTIQPyY",
+            authDomain: "cha-panela-45b3c.firebaseapp.com",
+            projectId: "cha-panela-45b3c",
+            storageBucket: "cha-panela-45b3c.firebasestorage.app",
+            messagingSenderId: "67640604092",
+            appId: "1:67640604092:web:e793278ead88c340ff27b9"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+        // Referência para o banco de dados
+        const database = firebase.database();
+        const mensagensRef = database.ref('mensagens');
+
+        // Buscar e exibir mensagens
+        mensagensRef.on('value', (snapshot) => {
+            const mensagens = snapshot.val();
+            const listaMensagens = document.getElementById('listaMensagens');
+            listaMensagens.innerHTML = '';
+
+            if (mensagens) {
+                Object.keys(mensagens).forEach(key => {
+                    const msg = mensagens[key];
+                    const mensagemElement = document.createElement('div');
+                    mensagemElement.className = 'mensagem';
+                    mensagemElement.innerHTML = `
+                    <p class="mensagem-nome"><strong>${msg.nome}</strong></p>
+                    <p class="mensagem-texto">${msg.mensagem}</p>
+                    <p class="mensagem-data">${msg.data}</p>
+                    <hr>
+                `;
+                    listaMensagens.appendChild(mensagemElement);
+                });
+            } else {
+                listaMensagens.innerHTML = '<p>Nenhuma mensagem ainda. Seja o primeiro a deixar uma mensagem!</p>';
+            }
+        });
 
