@@ -27,7 +27,7 @@ var intervalo = setInterval(atualizarContador, 1000);
 atualizarContador();
 
 // Verifica se veio do formulário de mensagem
-if(window.location.hash === '#mensagens' || document.referrer.includes('mensagem.html')) {
+if (window.location.hash === '#mensagens' || document.referrer.includes('mensagem.html')) {
     setTimeout(() => {
         const mensagensSection = document.getElementById('mensagens');
         mensagensSection.scrollIntoView({ behavior: 'smooth' });
@@ -66,14 +66,14 @@ const produtos = [
     {
         nome: "Panela De Pressao",
         valor: "R$ 119,99",
-        imagem: "/img/panelapressao.png", 
+        imagem: "/img/panelapressao.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Panela%20de%20Pressao).",
     },
     {
         nome: "Micro Ondas",
         valor: "R$ 600,00",
-        imagem: "../img/microondas.png", 
+        imagem: "../img/microondas.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Micro%20-%20Ondas).",
 
@@ -81,7 +81,7 @@ const produtos = [
     {
         nome: "Escorredor de Louças",
         valor: "R$ 100,00",
-        imagem: "../img/escorredor.png", 
+        imagem: "../img/escorredor.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Escorredor%20de%20Louças).",
 
@@ -165,7 +165,7 @@ const produtos = [
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Pano%20De%20Pratos).",
 
-    },    {
+    }, {
         nome: "Jogo de Banheiro",
         valor: "R$ 70,00",
         imagem: "img/kitbanheiro.png",
@@ -227,7 +227,7 @@ const produtos = [
         imagem: "../img/jogocopos2.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20de%20Copos).",
-        
+
     },
     {
         nome: "Jogo de Copos",
@@ -244,9 +244,72 @@ const produtos = [
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Conjunto%20De%20Jarras).",
 
+    },
+    {
+        nome: "Aparelho de Jantar",
+        valor: "R$ 200,00",
+        imagem: "img/aparelhoDeJantar.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Aparelho%20De%20Jantar).",
+    },
+    {
+        nome: "Jogo de Lençol",
+        valor: "R$ 120,00",
+        imagem: "img/jogoDeLencol.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Lençol).",
+    },
+    {
+        nome: "Jogo de Toalha",
+        valor: "R$ 95,00",
+        imagem: "img/jogoDeToalhas.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Toalha).",
+    },
+    {
+        nome: "Saladeira",
+        valor: "R$ 50,00",
+        imagem: "img/saladeira.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Saladeira).",
+    },
+    {
+        nome: "Cortador e Descascador",
+        valor: "R$ 30,00",
+        imagem: "img/cortadorEdescascador.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Cortador%20E%20Descascador).",
+    },
+    {
+        nome: "Jogo de Peneiras",
+        valor: "R$ 35,00",
+        imagem: "img/jogoDePeneiras.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Peneiras).",
+    },
+    {
+        nome: "jogo de Frigideiras",
+        valor: "R$ 80,00",
+        imagem: "img/jogoDeFrigideiras.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%Frigideiras).",
+    },
+    {
+        nome: "Espremedor de Suco",
+        valor: "R$ 140,00",
+        imagem: "img/espremedorDeSuco.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Espremedor%20De%Suco).",
+    },
+    {
+        nome: "Boleira",
+        valor: "R$ 70,00",
+        imagem: "img/boleira.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Boleira).",
     }
     // Adicione novos produtos aqui facilmente
-];
+]; 
 
 const container = document.getElementById("produtos-container");
 
@@ -255,9 +318,7 @@ produtos.forEach((produto, index) => {
       <div class="tamanho__grid">
         <img src="${produto.imagem}" alt="${produto.nome}" class="secundario__imagem imagem">
 
-        <h2 class="descricao__texto">
-          <a target="_blank" class="descricao__texto">${produto.nome}</a>
-        </h2>
+        <h2 class="descricao__texto">${produto.nome}</h2>
         <br>
         <p class="container__valor">${produto.valor}</p>
         <button class="botao-modal" onclick="abrirModal(${index})">🎁 Quero Presentear!</button>
@@ -285,43 +346,43 @@ function fecharModal(index) {
     document.getElementById(`modal-${index}`).style.display = "none";
 }
 
-        // Inicialize o Firebase com sua configuração
-        const firebaseConfig = {
-            apiKey: "AIzaSyDa-mCyN9ypQqUDvZNCKjIjryknwTIQPyY",
-            authDomain: "cha-panela-45b3c.firebaseapp.com",
-            projectId: "cha-panela-45b3c",
-            storageBucket: "cha-panela-45b3c.firebasestorage.app",
-            messagingSenderId: "67640604092",
-            appId: "1:67640604092:web:e793278ead88c340ff27b9"
-        };
+// Inicialize o Firebase com sua configuração
+const firebaseConfig = {
+    apiKey: "AIzaSyDa-mCyN9ypQqUDvZNCKjIjryknwTIQPyY",
+    authDomain: "cha-panela-45b3c.firebaseapp.com",
+    projectId: "cha-panela-45b3c",
+    storageBucket: "cha-panela-45b3c.firebasestorage.app",
+    messagingSenderId: "67640604092",
+    appId: "1:67640604092:web:e793278ead88c340ff27b9"
+};
 
-        firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
-        // Referência para o banco de dados
-        const database = firebase.database();
-        const mensagensRef = database.ref('mensagens');
+// Referência para o banco de dados
+const database = firebase.database();
+const mensagensRef = database.ref('mensagens');
 
-        // Buscar e exibir mensagens
-        mensagensRef.on('value', (snapshot) => {
-            const mensagens = snapshot.val();
-            const listaMensagens = document.getElementById('listaMensagens');
-            listaMensagens.innerHTML = '';
+// Buscar e exibir mensagens
+mensagensRef.on('value', (snapshot) => {
+    const mensagens = snapshot.val();
+    const listaMensagens = document.getElementById('listaMensagens');
+    listaMensagens.innerHTML = '';
 
-            if (mensagens) {
-                Object.keys(mensagens).forEach(key => {
-                    const msg = mensagens[key];
-                    const mensagemElement = document.createElement('div');
-                    mensagemElement.className = 'mensagem';
-                    mensagemElement.innerHTML = `
+    if (mensagens) {
+        Object.keys(mensagens).forEach(key => {
+            const msg = mensagens[key];
+            const mensagemElement = document.createElement('div');
+            mensagemElement.className = 'mensagem';
+            mensagemElement.innerHTML = `
                     <p class="mensagem-nome"><strong>${msg.nome}</strong></p>
                     <p class="mensagem-texto">${msg.mensagem.replace(/\n/g, '<br>')}</p>
                     <p class="mensagem-data">${msg.data}</p>
                     <hr>
                 `;
-                    listaMensagens.appendChild(mensagemElement);
-                });
-            } else {
-                listaMensagens.innerHTML = '<p>Nenhuma mensagem ainda. Seja o primeiro a deixar uma mensagem!</p>';
-            }
+            listaMensagens.appendChild(mensagemElement);
         });
+    } else {
+        listaMensagens.innerHTML = '<p>Nenhuma mensagem ainda. Seja o primeiro a deixar uma mensagem!</p>';
+    }
+});
 
