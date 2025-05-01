@@ -304,7 +304,7 @@ const produtos = [
     {
         nome: "Boleira",
         valor: "R$ 70,00",
-        imagem: "img/boleira2.png",
+        imagem: "img/BoleiraVidro.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Boleira).",
     }
