@@ -295,9 +295,9 @@ const produtos = [
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%Frigideiras).",
     },
     {
-        nome: "Espremedor de Suco",
+        nome: "Espremedor de Frutas",
         valor: "R$ 140,00",
-        imagem: "img/espremedorDeSuco.png",
+        imagem: "img/espremedorDeFrutas.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Espremedor%20De%Suco).",
     },
