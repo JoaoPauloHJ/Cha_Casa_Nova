@@ -297,14 +297,14 @@ const produtos = [
     {
         nome: "Espremedor de Suco",
         valor: "R$ 140,00",
-        imagem: "img/espremedordeSuco.png",
+        imagem: "img/espremedorDeSuco.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Espremedor%20De%Suco).",
     },
     {
         nome: "Boleira",
         valor: "R$ 70,00",
-        imagem: "img/boleiraa.png",
+        imagem: "img/boleira.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Boleira).",
     }
