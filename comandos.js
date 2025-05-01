@@ -36,6 +36,14 @@ if (window.location.hash === '#mensagens' || document.referrer.includes('mensage
 
 const produtos = [
     {
+        nome: "Jogo de Tapetes",
+        valor: "R$ 90,00",
+        imagem: "img/jogotapete1.png",
+        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Tapetes).",
+
+    },
+    {
         nome: "Liquidificador",
         valor: "R$ 100,00",
         imagem: "img/liquidificador.png",
@@ -182,14 +190,6 @@ const produtos = [
 
     },
     {
-        nome: "Jogo de Tapetes",
-        valor: "R$ 90,00",
-        imagem: "img/jogotapete1.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Tapetes).",
-
-    },
-    {
         nome: "Processador",
         valor: "R$ 25,00",
         imagem: "img/processador.png",
@@ -304,7 +304,7 @@ const produtos = [
     {
         nome: "Boleira",
         valor: "R$ 70,00",
-        imagem: "img/boleira.png",
+        imagem: "img/boleira2.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Boleira).",
     }
