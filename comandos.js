@@ -37,7 +37,7 @@ if(window.location.hash === '#mensagens' || document.referrer.includes('mensagem
 const produtos = [
     {
         nome: "Liquidificador",
-        valor: "R$ 99,00",
+        valor: "R$ 100,00",
         imagem: "img/liquidificador.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Olá,%20Gostaria%20de%20reservar%20esse%20presente%20-%20Liquidificador."
@@ -51,28 +51,28 @@ const produtos = [
     },
     {
         nome: "Sanduicheira",
-        valor: "R$ 159,00",
+        valor: "R$ 100,00",
         imagem: "img/sandui.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Olá,%20Gostaria%20de%20reservar%20esse%20presente%20-%20Sanduicheira."
     },
     {
         nome: "Jogo de Panelas",
-        valor: "R$ 159,00",
+        valor: "R$ 550,00",
         imagem: "/img/panelas.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20de%20Panelas)."
     },
     {
         nome: "Panela De Pressao",
-        valor: "R$ 264,99",
+        valor: "R$ 119,99",
         imagem: "/img/panelapressao.png", 
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Panela%20de%20Pressao).",
     },
     {
         nome: "Micro Ondas",
-        valor: "R$ 74,00",
+        valor: "R$ 600,00",
         imagem: "../img/microondas.png", 
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Micro%20-%20Ondas).",
@@ -80,7 +80,7 @@ const produtos = [
     },
     {
         nome: "Escorredor de Louças",
-        valor: "R$ 98,00",
+        valor: "R$ 100,00",
         imagem: "../img/escorredor.png", 
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Escorredor%20de%20Louças).",
@@ -88,7 +88,7 @@ const produtos = [
     },
     {
         nome: "Jogo de Pratos",
-        valor: "R$ 63,00",
+        valor: "R$ 65,00",
         imagem: "../img/pratos.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20de%20Pratos).",
@@ -96,7 +96,7 @@ const produtos = [
     },
     {
         nome: "Kit de Utensilios",
-        valor: "R$ 42,00",
+        valor: "R$ 65,00",
         imagem: "../img/kitutensilios.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Kit%20de%20Utensilios).",
@@ -104,7 +104,7 @@ const produtos = [
     },
     {
         nome: "Travessa de Vidro",
-        valor: "R$ 32,00",
+        valor: "R$ 70,00",
         imagem: "../img/TravessaDeVidro.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Travessa%20de%20Vidro).",
@@ -112,7 +112,7 @@ const produtos = [
     },
     {
         nome: "Kit Porta Tempero",
-        valor: "R$ 52,00",
+        valor: "R$ 70,00",
         imagem: "../img/portatempero.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Kit%20Porta%20Tempero).",
@@ -120,7 +120,7 @@ const produtos = [
     },
     {
         nome: "Jogo De Facas",
-        valor: "R$ 99,00",
+        valor: "R$ 120,00",
         imagem: "../img/facas.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Facas).",
@@ -136,7 +136,7 @@ const produtos = [
     },
     {
         nome: "Kit Pote Hermeticos",
-        valor: "R$ 105,00",
+        valor: "R$ 100,00",
         imagem: "../img/poteshermeticos.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Kit%20Potes%20Hermeticos).",
@@ -223,7 +223,7 @@ const produtos = [
     },
     {
         nome: "Jogo de Copos",
-        valor: "R$ 184,00",
+        valor: "R$ 60,00",
         imagem: "../img/jogocopos2.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20de%20Copos).",
