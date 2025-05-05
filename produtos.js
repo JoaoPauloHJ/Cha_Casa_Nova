@@ -32,10 +32,11 @@ const produtos = [
     },
     {
         nome: "Jogo de Panelas",
-        valor: "R$ 550,00",
+        valor: "_",
         imagem: "/img/panelas.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20de%20Panelas)."
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20de%20Panelas).",
+        disponivel: false
     },
     {
         nome: "Panela De Pressao",
@@ -165,11 +166,11 @@ const produtos = [
     },
     {
         nome: "Cortador Multifunção",
-        valor: "R$ 50,00",
+        valor: "_",
         imagem: "img/cortadorMulti.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Cortador%20Multifunção).",
-
+        disponivel: false
     },
     {
         nome: "Jogo de Tabuleiros",
@@ -273,7 +274,6 @@ const produtos = [
         imagem: "img/BoleiraVidro.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Boleira).",
-        disponivel: false
     }
     // Adicione novos produtos aqui facilmente
 ]; 
