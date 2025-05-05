@@ -1,38 +1,4 @@
-function atualizarContador() {
-    // Defina a data final (Ano, Mês (0-11), Dia, Hora, Minuto, Segundo)
-    var dataFinal = new Date(2025, 9, 20, 17, 0, 0); // 20 de março de 2025 às 23:59:59
 
-    var agora = new Date();
-    var diferenca = dataFinal - agora; // Diferença em milissegundos
-
-    if (diferenca <= 0) {
-        document.getElementById("contador").innerHTML = "Chegou o grande dia!";
-        clearInterval(intervalo); // Para a contagem quando atingir a data final
-        return;
-    }
-
-    var dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
-    var horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
-    var segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
-
-    document.getElementById("contador").innerHTML =
-        `Faltam ${dias} dias, ${horas}h ${minutos}m ${segundos}s`;
-}
-
-// Atualiza o contador a cada segundo
-var intervalo = setInterval(atualizarContador, 1000);
-
-// Executa a função imediatamente para evitar espera de 1s
-atualizarContador();
-
-// Verifica se veio do formulário de mensagem
-if (window.location.hash === '#mensagens' || document.referrer.includes('mensagem.html')) {
-    setTimeout(() => {
-        const mensagensSection = document.getElementById('mensagens');
-        mensagensSection.scrollIntoView({ behavior: 'smooth' });
-    }, 300); // Pequeno delay para carregar as mensagens
-}
 
 const produtos = [
     {
@@ -218,7 +184,7 @@ const produtos = [
         valor: "R$ 65,00",
         imagem: "img/JogoTacaSobremesa.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Taças%20De%@Sobremesa).",
+        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Tacas%20De%@Sobremesa).",
 
     },
     {
@@ -307,6 +273,7 @@ const produtos = [
         imagem: "img/BoleiraVidro.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Boleira).",
+        disponivel: false
     }
     // Adicione novos produtos aqui facilmente
 ]; 
@@ -314,6 +281,10 @@ const produtos = [
 const container = document.getElementById("produtos-container");
 
 produtos.forEach((produto, index) => {
+    const buttonPresentear = produto.disponivel === false
+        ? `<button class="botao-modal" disabled style="opacity: 0.5; cursor: not-allowed;">🎁 Presente Já Reservado</button>`
+        : `<button class="botao-modal" onclick="abrirModal(${index})">🎁 Quero Presentear!</button>`;
+
     const produtoHTML = `
       <div class="tamanho__grid">
         <img src="${produto.imagem}" alt="${produto.nome}" class="secundario__imagem imagem">
@@ -321,14 +292,14 @@ produtos.forEach((produto, index) => {
         <h2 class="descricao__texto">${produto.nome}</h2>
         <br>
         <p class="container__valor">${produto.valor}</p>
-        <button class="botao-modal" onclick="abrirModal(${index})">🎁 Quero Presentear!</button>
+        ${buttonPresentear}
 
         <div class="modal-overlay" id="modal-${index}" style="display: none;">
           <div class="modal-conteudo">
             <p class="descricao__textoP">Escolha uma opção:</p>
             <div class="modal-botoes">
-              <a href="${produto.pagamento}" target="_blank" class="botao-modal-opcao">💳 Presentear agora!</a>
-              <a href="${produto.whatsapp}" target="_blank" class="botao-modal-opcao botao-whatsapp">📱 Reservar via WhatsApp e Presentear depois!</a>
+              <a href="${produto.pagamento}" target="_blank" class="botao-modal-opcao">💳 Presentear Online!</a>
+              <a href="${produto.whatsapp}" target="_blank" class="botao-modal-opcao botao-whatsapp">📱 Reservar via WhatsApp e Presentear presencialmente!</a>
             </div>
             <button class="modal-fechar" onclick="fecharModal(${index})">Fechar</button>
           </div>
@@ -345,44 +316,3 @@ function abrirModal(index) {
 function fecharModal(index) {
     document.getElementById(`modal-${index}`).style.display = "none";
 }
-
-// Inicialize o Firebase com sua configuração
-const firebaseConfig = {
-    apiKey: "AIzaSyDa-mCyN9ypQqUDvZNCKjIjryknwTIQPyY",
-    authDomain: "cha-panela-45b3c.firebaseapp.com",
-    projectId: "cha-panela-45b3c",
-    storageBucket: "cha-panela-45b3c.firebasestorage.app",
-    messagingSenderId: "67640604092",
-    appId: "1:67640604092:web:e793278ead88c340ff27b9"
-};
-
-firebase.initializeApp(firebaseConfig);
-
-// Referência para o banco de dados
-const database = firebase.database();
-const mensagensRef = database.ref('mensagens');
-
-// Buscar e exibir mensagens
-mensagensRef.on('value', (snapshot) => {
-    const mensagens = snapshot.val();
-    const listaMensagens = document.getElementById('listaMensagens');
-    listaMensagens.innerHTML = '';
-
-    if (mensagens) {
-        Object.keys(mensagens).forEach(key => {
-            const msg = mensagens[key];
-            const mensagemElement = document.createElement('div');
-            mensagemElement.className = 'mensagem';
-            mensagemElement.innerHTML = `
-                    <p class="mensagem-nome"><strong>${msg.nome}</strong></p>
-                    <p class="mensagem-texto">${msg.mensagem.replace(/\n/g, '<br>')}</p>
-                    <p class="mensagem-data">${msg.data}</p>
-                    <hr>
-                `;
-            listaMensagens.appendChild(mensagemElement);
-        });
-    } else {
-        listaMensagens.innerHTML = '<p>Nenhuma mensagem ainda. Seja o primeiro a deixar uma mensagem!</p>';
-    }
-});
-

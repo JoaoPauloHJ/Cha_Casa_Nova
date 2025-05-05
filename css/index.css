@@ -60,10 +60,11 @@
     border: 1px solid #ccc;
 }
 
-.bambu {
-    background: linear-gradient(135deg, #e1b97c, #d2a66b, #c6985a);
-}
-
+.indisponivel {
+    color: red;
+    font-weight: bold;
+    padding: 10px 0;
+  }
 
 body {
     background-color: var(--cor-de-fundo);
