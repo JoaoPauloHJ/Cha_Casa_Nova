@@ -65,15 +65,12 @@
         };
 
         // Inicialize o Firebase
-        // Inicialize o Firebase
         firebase.initializeApp(firebaseConfig);
         const database = firebase.database();
         // Verificação de carregamento
         if (typeof firebase === 'undefined') {
-            alert("Firebase não carregou! Verifique sua conexão ou scripts");
-        } else {
-            alert("Firebase carregado com sucesso!");
-        }
+            alert("Infelizmente está com falha, volte mais tarde ou me avise no whatsapp");
+        };
 
         // Modifique o evento para prevenir o comportamento padrão do formulário
         document.getElementById('enviarBtn').addEventListener('click', async function (e) {
