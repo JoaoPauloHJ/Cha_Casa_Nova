@@ -51,6 +51,7 @@ const produtos = [
         imagem: "../img/microondas.png",
         pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
         whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Micro%20-%20Ondas).",
+        disponivel: false
 
     },
     {
