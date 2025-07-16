@@ -1,290 +1,246 @@
 
 
 const produtos = [
-    {
-        nome: "Jogo de Tapetes",
-        valor: "R$ 90,00",
-        imagem: "img/jogotapete1.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Tapetes).",
-
-    },
-    {
-        nome: "Liquidificador",
-        valor: "R$ 100,00",
-        imagem: "img/liquidificador.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Olá,%20Gostaria%20de%20reservar%20esse%20presente%20-%20Liquidificador."
-    },
-    {
-        nome: "Air Fryer",
-        valor: "R$ 399,00",
-        imagem: "img/airfryer.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Olá,%20Gostaria%20de%20reservar%20esse%20presente%20-%20Air%20Fryer."
-    },
-    {
-        nome: "Sanduicheira",
-        valor: "R$ 100,00",
-        imagem: "img/sandui.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Olá,%20Gostaria%20de%20reservar%20esse%20presente%20-%20Sanduicheira."
-    },
-    {
-        nome: "Jogo de Panelas",
-        valor: "_",
-        imagem: "/img/panelas.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20de%20Panelas).",
-        disponivel: false
-    },
-    {
-        nome: "Panela De Pressao",
-        valor: "R$ 119,99",
-        imagem: "/img/panelapressao.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Panela%20de%20Pressao).",
-    },
-    {
-        nome: "Micro Ondas",
-        valor: "R$ 600,00",
-        imagem: "../img/microondas.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Micro%20-%20Ondas).",
-        disponivel: false
-
-    },
-    {
-        nome: "Escorredor de Louças",
-        valor: "R$ 100,00",
-        imagem: "../img/escorredor.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Escorredor%20de%20Louças).",
-
-    },
-    {
-        nome: "Jogo de Pratos",
-        valor: "R$ 65,00",
-        imagem: "../img/pratos.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20de%20Pratos).",
-
-    },
-    {
-        nome: "Kit de Utensilios",
-        valor: "R$ 65,00",
-        imagem: "../img/kitutensilios.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Kit%20de%20Utensilios).",
-
-    },
-    {
-        nome: "Travessa de Vidro",
-        valor: "R$ 70,00",
-        imagem: "../img/TravessaDeVidro.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Travessa%20de%20Vidro).",
-
-    },
-    {
-        nome: "Kit Porta Tempero",
-        valor: "R$ 70,00",
-        imagem: "../img/portatempero.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Kit%20Porta%20Tempero).",
-
-    },
-    {
-        nome: "Jogo De Facas",
-        valor: "R$ 120,00",
-        imagem: "../img/facas.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Facas).",
-
-    },
-    {
-        nome: "Faqueiro Buzios",
-        valor: "R$ 89,90",
-        imagem: "../img/faqueirobuzios.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Faqueiro%2024%20Peças).",
-
-    },
-    {
-        nome: "Kit Pote Hermeticos",
-        valor: "R$ 100,00",
-        imagem: "../img/poteshermeticos.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Kit%20Potes%20Hermeticos).",
-
-    },
-    {
-        nome: "Kit Cozinha",
-        valor: "R$ 61,99",
-        imagem: "img/kitcozinha.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Kit%20Cozinha).",
-
-    },
-    {
-        nome: "Jogo de Toalhas",
-        valor: "R$ 95,00",
-        imagem: "img/toalha.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Toalhas).",
-
-    },
-    {
-        nome: "Jogo de Pano de Pratos",
-        valor: "R$ 35,00",
-        imagem: "img/jogopanodeprato.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Pano%20De%20Pratos).",
-
-    }, {
-        nome: "Jogo de Banheiro",
-        valor: "R$ 70,00",
-        imagem: "img/kitbanheiro.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Baheiro).",
-
-    },
-    {
-        nome: "Kit Potes Mantimentos",
-        valor: "R$ 75,00",
-        imagem: "img/kitpotesmantimento.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Kit%20Pote%20Mantimentos).",
-
-    },
-    {
-        nome: "Processador",
-        valor: "R$ 25,00",
-        imagem: "img/processador.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Processador%20De%20Alimentos).",
-
-    },
-    {
-        nome: "Cortador Multifunção",
-        valor: "_",
-        imagem: "img/cortadorMulti.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Cortador%20Multifunção).",
-        disponivel: false
-    },
-    {
-        nome: "Jogo de Tabuleiros",
-        valor: "R$ 100,00",
-        imagem: "img/tabuleiros.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Tabuleiros).",
-
-    },
-    {
-        nome: "Taças de Sobremesa",
-        valor: "R$ 65,00",
-        imagem: "img/JogoTacaSobremesa.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Tacas%20De%@Sobremesa).",
-
-    },
-    {
-        nome: "Jogo de Copos",
-        valor: "R$ 60,00",
-        imagem: "../img/jogocopos2.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20de%20Copos).",
-
-    },
-    {
-        nome: "Jogo de Copos",
-        valor: "R$ 40,00",
-        imagem: "img/kitcopo.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Copos).",
-
-    },
-    {
-        nome: "Conjunto de Jarras",
-        valor: "R$ 70,00",
-        imagem: "img/conjuntoJarra.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Conjunto%20De%20Jarras).",
-
-    },
-    {
-        nome: "Aparelho de Jantar",
-        valor: "R$ 200,00",
-        imagem: "img/aparelhoDeJantar.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Aparelho%20De%20Jantar).",
-    },
-    {
-        nome: "Jogo de Lençol",
-        valor: "R$ 120,00",
-        imagem: "img/jogoDeLencol.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Lençol).",
-    },
-    {
-        nome: "Jogo de Toalha",
-        valor: "R$ 95,00",
-        imagem: "img/jogoDeToalhas.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Toalha).",
-    },
-    {
-        nome: "Saladeira",
-        valor: "R$ 50,00",
-        imagem: "img/saladeira.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Saladeira).",
-    },
-    {
-        nome: "Cortador e Descascador",
-        valor: "R$ 30,00",
-        imagem: "img/cortadorEdescascador.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Cortador%20E%20Descascador).",
-    },
-    {
-        nome: "Jogo de Peneiras",
-        valor: "R$ 35,00",
-        imagem: "img/jogoDePeneiras.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%20Peneiras).",
-    },
-    {
-        nome: "jogo de Frigideiras",
-        valor: "R$ 80,00",
-        imagem: "img/jogoDeFrigideiras.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Jogo%20De%Frigideiras).",
-    },
-    {
-        nome: "Espremedor de Frutas",
-        valor: "R$ 140,00",
-        imagem: "img/espremedorDeFrutas.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Espremedor%20De%Suco).",
-    },
-    {
-        nome: "Boleira",
-        valor: "R$ 70,00",
-        imagem: "img/BoleiraVidro.png",
-        pagamento: "https://checkout.nubank.com.br/DiNnlzaRiG92botq",
-        whatsapp: "https://wa.me/5534996920066/?text=Ol%C3%A1,%20Gostaria%20de%20reservar%20esse%20presente%20(Boleira).",
-    }
-    // Adicione novos produtos aqui facilmente
-]; 
+    
+        {
+            "nome": "Jogo de Tapetes",
+            "imagem": "img/jogotapete1.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20de%20Tapetes."
+        },
+        {
+            "nome": "Liquidificador",
+            "imagem": "img/liquidificador.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Liquidificador."
+        },
+        {
+            "nome": "Air Fryer",
+            "imagem": "img/airfryer.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Air%20Fryer."
+        },
+        {
+            "nome": "Sanduicheira",
+            "imagem": "img/sandui.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Sanduicheira."
+        },
+        {
+            "nome": "Jogo de Panelas",
+            "imagem": "/img/panelas.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20de%20Panelas.",
+            "disponivel": false
+        },
+        {
+            "nome": "Panela De Pressao",
+            "imagem": "/img/panelapressao.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Panela%20De%20Pressao."
+        },
+        {
+            "nome": "Micro Ondas",
+            "imagem": "../img/microondas.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Micro%20Ondas.",
+            "disponivel": false
+        },
+        {
+            "nome": "Escorredor de Louças",
+            "imagem": "../img/escorredor.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Escorredor%20de%20Lou%C3%A7as."
+        },
+        {
+            "nome": "Jogo de Pratos",
+            "imagem": "../img/pratos.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20de%20Pratos."
+        },
+        {
+            "nome": "Kit de Utensilios",
+            "imagem": "../img/kitutensilios.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Kit%20de%20Utensilios."
+        },
+        {
+            "nome": "Travessa de Vidro",
+            "imagem": "../img/TravessaDeVidro.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Travessa%20de%20Vidro."
+        },
+        {
+            "nome": "Kit Porta Tempero",
+            "imagem": "../img/portatempero.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Kit%20Porta%20Tempero."
+        },
+        {
+            "nome": "Jogo De Facas",
+            "imagem": "../img/facas.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20De%20Facas."
+        },
+        {
+            "nome": "Faqueiro Buzios",
+            "imagem": "../img/faqueirobuzios.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Faqueiro%2024%20Pe%C3%A7as."
+        },
+        {
+            "nome": "Kit Pote Hermeticos",
+            "imagem": "../img/poteshermeticos.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Kit%20Potes%20Hermeticos."
+        },
+        {
+            "nome": "Kit Cozinha",
+            "imagem": "img/kitcozinha.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Kit%20Cozinha."
+        },
+        {
+            "nome": "Jogo de Toalhas",
+            "imagem": "img/toalha.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20de%20Toalhas."
+        },
+        {
+            "nome": "Jogo de Pano de Pratos",
+            "imagem": "img/jogopanodeprato.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20de%20Pano%20de%20Pratos."
+        },
+        {
+            "nome": "Jogo de Banheiro",
+            "imagem": "img/kitbanheiro.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20de%20Banheiro."
+        },
+        {
+            "nome": "Kit Potes Mantimentos",
+            "imagem": "img/kitpotesmantimento.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Kit%20Potes%20Mantimentos."
+        },
+        {
+            "nome": "Processador",
+            "imagem": "img/processador.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Processador%20De%20Alimentos."
+        },
+        {
+            "nome": "Cortador Multifunção",
+            "imagem": "img/cortadorMulti.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Cortador%20Multifun%C3%A7%C3%A3o.",
+            "disponivel": false
+        },
+        {
+            "nome": "Jogo de Tabuleiros",
+            "imagem": "img/tabuleiros.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20de%20Tabuleiros."
+        },
+        {
+            "nome": "Taças de Sobremesa",
+            "imagem": "img/JogoTacaSobremesa.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Ta%C3%A7as%20de%20Sobremesa."
+        },
+        {
+            "nome": "Jogo de Copos",
+            "imagem": "../img/jogocopos2.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20de%20Copos."
+        },
+        {
+            "nome": "Jogo de Copos",
+            "imagem": "img/kitcopo.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20de%20Copos."
+        },
+        {
+            "nome": "Conjunto de Jarras",
+            "imagem": "img/conjuntoJarra.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Conjunto%20de%20Jarras."
+        },
+        {
+            "nome": "Aparelho de Jantar",
+            "imagem": "img/aparelhoDeJantar.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Aparelho%20de%20Jantar."
+        },
+        {
+            "nome": "Jogo de Lençol",
+            "imagem": "img/jogoDeLencol.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20de%20Len%C3%A7ol."
+        },
+        {
+            "nome": "Jogo de Toalha",
+            "imagem": "img/jogoDeToalhas.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20de%20Toalha."
+        },
+        {
+            "nome": "Saladeira",
+            "imagem": "img/saladeira.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Saladeira."
+        },
+        {
+            "nome": "Cortador e Descascador",
+            "imagem": "img/cortadorEdescascador.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Cortador%20e%20Descascador."
+        },
+        {
+            "nome": "Jogo de Peneiras",
+            "imagem": "img/jogoDePeneiras.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20de%20Peneiras."
+        },
+        {
+            "nome": "jogo de Frigideiras",
+            "imagem": "img/jogoDeFrigideiras.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20jogo%20de%20Frigideiras."
+        },
+        {
+            "nome": "Espremedor de Frutas",
+            "imagem": "img/espremedorDeFrutas.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Espremedor%20de%20Frutas."
+        },
+        {
+            "nome": "Boleira",
+            "imagem": "img/BoleiraVidro.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Boleira."
+        },
+        {
+            "nome": "Panela De Arroz",
+            "imagem": "img/PaneladeArroz.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Panela%20De%20Arroz."
+        },
+        {
+            "nome": "Ferro De passar",
+            "imagem": "img/ferrodepassar.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Ferro%20De%20passar."
+        },
+        {
+            "nome": "Tábua De Passar",
+            "imagem": "img/Tabuadepassar.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20T%C3%A1bua%20De%20Passar."
+        },
+        {
+            "nome": "Forno Elétrico",
+            "imagem": "img/Forno.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Forno%20El%C3%A9trico.",
+            "disponivel": false
+        },
+        {
+            "nome": "Tapetes P/ Banheiro",
+            "imagem": "img/Tapetesbanheiro.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Tapetes%20P%2F%20Banheiro."
+        },
+        {
+            "nome": "Cesto De Roupa",
+            "imagem": "img/cestoderoupa.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Cesto%20De%20Roupa."
+        },
+        {
+            "nome": "Lixeira P/ Banheiro",
+            "imagem": "img/cestoderoupa.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Lixeira%20P%2F%20Banheiro."
+        },
+        {
+            "nome": "Pipoqueira",
+            "imagem": "img/Pipoqueira.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Pipoqueira."
+        },
+        {
+            "nome": "Leiteira",
+            "imagem": "img/FervedorAlminio.png",
+            "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Leiteira."
+        }
+        // Adicione novos produtos aqui, repetindo acima
+    ]
 
 const container = document.getElementById("produtos-container");
 
 produtos.forEach((produto, index) => {
     const buttonPresentear = produto.disponivel === false
         ? `<button class="botao-modal" disabled style="opacity: 0.5; cursor: not-allowed;">🎁 Presente Já Reservado</button>`
-        : `<button class="botao-modal" onclick="abrirModal(${index})">🎁 Quero Presentear!</button>`;
+        : `<a href="${produto.whatsapp}" target="_blank" class="botao-modal">🎁 Quero Presentear!</a>`;
+
 
     const produtoHTML = `
       <div class="tamanho__grid">
@@ -292,7 +248,6 @@ produtos.forEach((produto, index) => {
 
         <h2 class="descricao__texto">${produto.nome}</h2>
         <br>
-        <p class="container__valor">${produto.valor}</p>
         ${buttonPresentear}
 
         <div class="modal-overlay" id="modal-${index}" style="display: none;">
