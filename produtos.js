@@ -218,7 +218,7 @@ const produtos = [
         },
         {
             "nome": "Lixeira P/ Banheiro",
-            "imagem": "img/cestoderoupa.png",
+            "imagem": "img/lixeirabanheiro.png",
             "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Lixeira%20P%2F%20Banheiro."
         },
         {
