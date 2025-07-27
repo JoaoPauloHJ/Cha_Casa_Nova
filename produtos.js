@@ -231,13 +231,13 @@ const produtos = [
         "nome": "Ferro De passar",
         "imagem": "img/ferrodepassar.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Ferro%20De%20passar.",
-        "categoria": "Lavandeiria"
+        "categoria": "Lavanderia"
     },
     {
         "nome": "Tábua De Passar",
         "imagem": "img/Tabuadepassar.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20T%C3%A1bua%20De%20Passar.",
-        "categoria": "Lavandeiria"
+        "categoria": "Lavanderia"
     },
     {
         "nome": "Forno Elétrico",
@@ -256,7 +256,7 @@ const produtos = [
         "nome": "Cesto De Roupa",
         "imagem": "img/cestoderoupa.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Cesto%20De%20Roupa.",
-        "categoria": "Lavandeiria"
+        "categoria": "Lavanderia"
     },
     {
         "nome": "Lixeira P/ Banheiro",
