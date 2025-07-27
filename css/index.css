@@ -866,6 +866,10 @@ body {
     .imagem_pix {
         width: 280px;
     }
+        .dispositivos__titulo {
+        font-size: 18px;
+        margin-top: 1.5em;
+    }
 }
 
 @media (max-width: 480px) {
@@ -889,6 +893,10 @@ body {
         font-size: 14px;
         padding: 0.8em 1.5em;
     }
+        .dispositivos__titulo {
+        font-size: 18px;
+        margin-top: 1.5em;
+    }
 }
 
 @media (max-width: 380px) {
@@ -910,7 +918,7 @@ body {
     }
 
     .dispositivos__titulo {
-        font-size: 20px;
+        font-size: 18px;
         margin-top: 1.5em;
     }
 }
