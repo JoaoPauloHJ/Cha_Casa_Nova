@@ -455,7 +455,7 @@ function renderizarProdutos(filtro = "Todos") {
     produtosFiltrados.forEach((produto, index) => {
         const buttonPresentear = produto.disponivel === false
             ? `<button class="botao-modal" disabled style="opacity: 0.5; cursor: not-allowed;">🎁 Presente Já Reservado</button>`
-            : `<button class="botao-modal" onclick="abrirModal(${index})">🎁 Quero Presentear!</button>`;
+            : `<a href="${produto.whatsapp}" target="_blank" class="botao-modal">🎁 Quero Presentear!</a>`;
 
         const produtoHTML = `
       <div class="tamanho__grid">
@@ -463,29 +463,11 @@ function renderizarProdutos(filtro = "Todos") {
         <h2 class="descricao__texto">${produto.nome}</h2>
         <br>
         ${buttonPresentear}
-        <div class="modal-overlay" id="modal-${index}" style="display: none;">
-          <div class="modal-conteudo">
-            <p class="descricao__textoP">Escolha uma opção:</p>
-            <div class="modal-botoes">
-              <a href="${produto.pagamento || '#'}" target="_blank" class="botao-modal-opcao">💳 Presentear Online!</a>
-              <a href="${produto.whatsapp}" target="_blank" class="botao-modal-opcao botao-whatsapp">📱 Reservar via WhatsApp e Presentear presencialmente!</a>
-            </div>
-            <button class="modal-fechar" onclick="fecharModal(${index})">Fechar</button>
-          </div>
-        </div>
       </div>
     `;
 
         container.innerHTML += produtoHTML;
     });
-}
-
-function abrirModal(index) {
-    document.getElementById(`modal-${index}`).style.display = "flex";
-}
-
-function fecharModal(index) {
-    document.getElementById(`modal-${index}`).style.display = "none";
 }
 
 // Inicializa com todos os produtos
