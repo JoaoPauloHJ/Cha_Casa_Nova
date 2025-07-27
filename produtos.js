@@ -225,7 +225,7 @@ const produtos = [
         "nome": "Panela De Arroz",
         "imagem": "img/PaneladeArroz.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Panela%20De%20Arroz.",
-        "categoria": "Cozinha"
+        "categoria": "Eletrodomésticos"
     },
     {
         "nome": "Ferro De passar",
@@ -244,7 +244,7 @@ const produtos = [
         "imagem": "img/Forno.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Forno%20El%C3%A9trico.",
         "disponivel": false,
-        "categoria": "Cozinha"
+        "categoria": "Eletrodomésticos"
     },
     {
         "nome": "Tapetes P/ Banheiro",
@@ -382,6 +382,60 @@ const produtos = [
         "nome": "Porta Frios",
         "imagem": "img/Porta_Frios.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Porta%20Frios.",
+        "categoria": "Cozinha"
+    },
+    {
+        "nome": "Plateleiras Para Banheiro",
+        "imagem": "img/Plateleiras_Banheiro.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Plateleiras%20Para%20Banheiro.",
+        "categoria": "Banheiro"
+    },
+    {
+        "nome": "Utensilios Bambu",
+        "imagem": "img/Utensilios_Bambu.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Utensilios%20Bambu.",
+        "categoria": "Cozinha"
+    },
+    {
+        "nome": "Utensilios Inox",
+        "imagem": "img/Utensilios_Inox.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Utensilios%20Inox.",
+        "categoria": "Cozinha"
+    },
+    {
+        "nome": "Jogo Americano",
+        "imagem": "img/Jogo_Americano.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20Americano.",
+        "categoria": "Cozinha"
+    },
+    {
+        "nome": "Descanso De Panelas",
+        "imagem": "img/Descanso_de_Panelas.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Descanso%20De%20Panelas.",
+        "categoria": "Cozinha"
+    },
+    {
+        "nome": "Suporte Para Rolos",
+        "imagem": "img/Suporte_Rolos.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Suporte%20Para%20Rolos.",
+        "categoria": "Cozinha"
+    },
+    {
+        "nome": "Suporte Botijao",
+        "imagem": "img/Suporte_Botijao.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Suporte%20Botijao.",
+        "categoria": "Cozinha"
+    },
+    {
+        "nome": "Varal De Chao",
+        "imagem": "img/Varal_de_Chao.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Varal%20De%20Chao.",
+        "categoria": "Lavanderia"
+    },
+    {
+        "nome": "Chaleira",
+        "imagem": "img/Chaleira.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Chaleira.",
         "categoria": "Cozinha"
     }
 
