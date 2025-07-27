@@ -329,6 +329,24 @@ const produtos = [
         "imagem": "img/Petisqueira.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Petisqueira.",
         "categoria": "Cozinha"
+    },
+    {
+        "nome": "Garrafa De Café",
+        "imagem": "img/Garrafa_Cafe.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Garrafa%20De%20Caf%C3%A9.",
+        "categoria": "Cozinha"
+    },
+    {
+        "nome": "Jogo de Xicaras",
+        "imagem": "img/Jogo_de_Xicaras.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20de%20Xicaras.",
+        "categoria": "Cozinha"
+    },
+    {
+        "nome": "Garrafas De Agua",
+        "imagem": "img/Garrafa_de_Agua.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Garrafas%20De%20Agua.",
+        "categoria": "Cozinha"
     }
     // Adicione novos produtos aqui, repetindo acima
 ]
