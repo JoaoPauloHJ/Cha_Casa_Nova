@@ -162,7 +162,7 @@ const produtos = [
         "categoria": "Cozinha"
     },
     {
-        "nome": "Conjunto de Jarras",
+        "nome": "Conjunto de Jarra",
         "imagem": "img/conjuntoJarra.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Conjunto%20de%20Jarras.",
         "categoria": "Cozinha"
