@@ -331,24 +331,6 @@ const produtos = [
         "categoria": "Cozinha"
     },
     {
-        "nome": "Garrafa De Café",
-        "imagem": "img/Garrafa_Cafe.png",
-        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Garrafa%20De%20Caf%C3%A9.",
-        "categoria": "Cozinha"
-    },
-    {
-        "nome": "Jogo de Xicaras",
-        "imagem": "img/Jogo_de_Xicaras.png",
-        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20de%20Xicaras.",
-        "categoria": "Cozinha"
-    },
-    {
-        "nome": "Garrafas De Agua",
-        "imagem": "img/Garrafa_de_Agua.png",
-        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Garrafas%20De%20Agua.",
-        "categoria": "Cozinha"
-    },
-    {
         "nome": "Conjunto Galheteiro",
         "imagem": "img/Conjunto_Galheteiro.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Conjunto%20Galheteiro.",
@@ -403,12 +385,6 @@ const produtos = [
         "categoria": "Cozinha"
     },
     {
-        "nome": "Jogo Americano",
-        "imagem": "img/Jogo_Americano.png",
-        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20Americano.",
-        "categoria": "Cozinha"
-    },
-    {
         "nome": "Descanso De Panelas",
         "imagem": "img/Descanso_de_Panelas.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Descanso%20De%20Panelas.",
@@ -441,26 +417,49 @@ const produtos = [
     {
         "nome": "Mesa De Jantar",
         "imagem": "img/Mesa_de_Jantar.png",
-        "categoria": "Sala"
-    },
-    {
-        "nome": "Geladeira",
-        "imagem": "img/Geladeira.png",
-        "categoria": "Cozinha"
-    },
-    {
-        "nome": "Tanquinho",
-        "imagem": "img/Tanquinho.png",
-        "categoria": "Lavanderia"
+        "categoria": "Sala",
+        "disponivel": false
     },
     {
         "nome": "Cooktop",
         "imagem": "img/Cooktop.png",
-        "categoria": "Cozinha"
+        "categoria": "Cozinha",
+        "disponivel": false
     },
     {
         "nome": "Armario Cozinha",
-        "imagem": "img/Armario_de_c.png",
+        "imagem": "img/Armario_de_Cozinha.png",
+        "categoria": "Cozinha",
+        "disponivel": false
+    },
+    {
+        "nome": "Tanquinho",
+        "imagem": "img/Tanquinho.png",
+        "categoria": "Lavanderia",
+        "disponivel": false
+    },
+    {
+        "nome": "Geladeira",
+        "imagem": "img/Geladeira.png",
+        "categoria": "Cozinha",
+        "disponivel": false
+    },
+    {
+        "nome": "Garrafas De Agua",
+        "imagem": "img/Garrafa_de_Agua.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Garrafas%20De%20Agua.",
+        "categoria": "Cozinha"
+    },
+    {
+        "nome": "Garrafa De Café",
+        "imagem": "img/Garrafa_Cafe.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Garrafa%20De%20Caf%C3%A9.",
+        "categoria": "Cozinha"
+    },
+    {
+        "nome": "Jogo de Xicaras",
+        "imagem": "img/Jogo_de_Xicaras.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20de%20Xicaras.",
         "categoria": "Cozinha"
     }
 
