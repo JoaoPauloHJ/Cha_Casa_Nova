@@ -437,6 +437,31 @@ const produtos = [
         "imagem": "img/Chaleira.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Chaleira.",
         "categoria": "Cozinha"
+    },
+    {
+        "nome": "Mesa De Jantar",
+        "imagem": "img/Mesa_de_Jantar.png",
+        "categoria": "Sala"
+    },
+    {
+        "nome": "Geladeira",
+        "imagem": "img/Geladeira.png",
+        "categoria": "Cozinha"
+    },
+    {
+        "nome": "Tanquinho",
+        "imagem": "img/Tanquinho.png",
+        "categoria": "Lavanderia"
+    },
+    {
+        "nome": "Cooktop",
+        "imagem": "img/Cooktop.png",
+        "categoria": "Cozinha"
+    },
+    {
+        "nome": "Armario Cozinha",
+        "imagem": "img/Armario_de_c.png",
+        "categoria": "Cozinha"
     }
 
     // Adicione novos produtos aqui, repetindo acima
