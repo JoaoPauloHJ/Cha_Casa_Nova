@@ -347,7 +347,44 @@ const produtos = [
         "imagem": "img/Garrafa_de_Agua.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Garrafas%20De%20Agua.",
         "categoria": "Cozinha"
+    },
+    {
+        "nome": "Conjunto Galheteiro",
+        "imagem": "img/Conjunto_Galheteiro.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Conjunto%20Galheteiro.",
+        "categoria": "Cozinha"
+    },
+    {
+        "nome": "Escumadeira Peneira",
+        "imagem": "img/Escumadeira_Peneira.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Escumadeira%20Peneira.",
+        "categoria": "Cozinha"
+    },
+    {
+        "nome": "Abridor De Latas",
+        "imagem": "img/Abridor_de_Latas.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Abridor%20De%20Latas.",
+        "categoria": "Cozinha"
+    },
+    {
+        "nome": "Cortinas",
+        "imagem": "img/Cortinas.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Cortinas.",
+        "categoria": "Sala"
+    },
+    {
+        "nome": "Ralador",
+        "imagem": "img/Ralador.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Ralador.",
+        "categoria": "Cozinha"
+    },
+    {
+        "nome": "Porta Frios",
+        "imagem": "img/Porta_Frios.png",
+        "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Porta%20Frios.",
+        "categoria": "Cozinha"
     }
+
     // Adicione novos produtos aqui, repetindo acima
 ]
 

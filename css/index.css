@@ -322,6 +322,51 @@ body {
     }
 }
 
+/* Label do filtro */
+.filtro-label {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+/* Estilo do select */
+.filtro-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    font-family: 'Georgia', serif;
+    background-color: #e9f5f8;
+    border: 2px solid #96f3d4;
+    border-radius: 12px;
+    padding: 0.8em 2.5em 0.8em 1em;
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+    text-align: center;
+    text-align-last: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 1em center;
+    background-size: 1em;
+}
+
+.filtro-select:focus {
+    outline: none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
+}
+
+.filtro-select option {
+    text-align: center;
+}
 
 
 /* .contador {
@@ -346,7 +391,7 @@ body {
 } */
 
 .container_principal {
-    background-image: url('/img/chapanela1920.png');
+    background-image: url('/img/ChaDePanela.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
