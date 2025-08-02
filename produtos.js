@@ -18,7 +18,8 @@ const produtos = [
         "nome": "Air Fryer",
         "imagem": "img/airfryer.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Air%20Fryer.",
-        "categoria": "Eletrodomésticos"
+        "categoria": "Eletrodomésticos",
+        "disponivel": false
     },
     {
         "nome": "Sanduicheira",
