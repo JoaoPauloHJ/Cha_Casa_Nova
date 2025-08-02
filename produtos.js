@@ -227,7 +227,8 @@ const produtos = [
         "nome": "Panela De Arroz",
         "imagem": "img/PaneladeArroz.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Panela%20De%20Arroz.",
-        "categoria": "Eletrodomésticos"
+        "categoria": "Eletrodomésticos",
+        "disponivel": false
     },
     {
         "nome": "Ferro De passar",
