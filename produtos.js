@@ -26,7 +26,8 @@ const produtos = [
         "nome": "Sanduicheira",
         "imagem": "img/sandui.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Sanduicheira.",
-        "categoria": "Eletrodomésticos"
+        "categoria": "Eletrodomésticos",
+        "disponivel": false
     },
     {
         "nome": "Jogo de Panelas",
