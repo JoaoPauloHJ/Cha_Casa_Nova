@@ -83,7 +83,8 @@ const produtos = [
         "nome": "Jogo De Facas",
         "imagem": "../img/facas.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20De%20Facas.",
-        "categoria": "Cozinha"
+        "categoria": "Cozinha",
+        "disponivel": false
     },
     {
         "nome": "Faqueiro Buzios",
@@ -315,7 +316,8 @@ const produtos = [
         "nome": "Tabua Para Carne",
         "imagem": "img/Tabua_para_Carne.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Tabua%20Para%20Carne.",
-        "categoria": "Cozinha"
+        "categoria": "Cozinha",
+        "disponivel": false
     },
     {
         "nome": "Travesseiros",
