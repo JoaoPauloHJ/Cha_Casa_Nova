@@ -268,7 +268,8 @@ const produtos = [
         "nome": "Lixeira P/ Banheiro",
         "imagem": "img/lixeirabanheiro.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Lixeira%20P%2F%20Banheiro.",
-        "categoria": "Banheiro"
+        "categoria": "Banheiro",
+        "disponivel": false
     },
     {
         "nome": "Pipoqueira",
@@ -430,7 +431,7 @@ const produtos = [
     {
         "nome": "Cooktop",
         "imagem": "img/Cooktop.png",
-        "categoria": "Cozinha",
+        "categoria": "Eletrodomésticos",
         "disponivel": false
     },
     {
@@ -448,7 +449,7 @@ const produtos = [
     {
         "nome": "Geladeira",
         "imagem": "img/Geladeira.png",
-        "categoria": "Cozinha",
+        "categoria": "Eletrodomésticos",
         "disponivel": false
     },
     {
@@ -461,13 +462,15 @@ const produtos = [
         "nome": "Garrafa De Café",
         "imagem": "img/Garrafa_Cafe.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Garrafa%20De%20Caf%C3%A9.",
-        "categoria": "Cozinha"
+        "categoria": "Cozinha",
+        "disponivel": false
     },
     {
         "nome": "Jogo de Xicaras",
         "imagem": "img/Jogo_de_Xicaras.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20de%20Xicaras.",
-        "categoria": "Cozinha"
+        "categoria": "Cozinha",
+        "disponivel": false
     }
 
     // Adicione novos produtos aqui, repetindo acima
