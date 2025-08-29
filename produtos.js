@@ -40,7 +40,8 @@ const produtos = [
         "nome": "Panela De Pressao",
         "imagem": "/img/panelapressao.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Panela%20De%20Pressao.",
-        "categoria": "Cozinha"
+        "categoria": "Cozinha",
+        "disponivel": false
     },
     {
         "nome": "Micro Ondas",
