@@ -170,7 +170,8 @@ const produtos = [
         "nome": "Conjunto de Jarra",
         "imagem": "img/conjuntoJarra.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Conjunto%20de%20Jarras.",
-        "categoria": "Cozinha"
+        "categoria": "Cozinha",
+        "disponivel": false
     },
     {
         "nome": "Aparelho de Jantar",
@@ -294,7 +295,8 @@ const produtos = [
         "nome": "Batedeira",
         "imagem": "img/Batedeira.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Batedeira.",
-        "categoria": "Eletrodomésticos"
+        "categoria": "Eletrodomésticos",
+        "disponivel": false
     },
     {
         "nome": "Coberta",
