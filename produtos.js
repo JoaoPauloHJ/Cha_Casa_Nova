@@ -225,7 +225,8 @@ const produtos = [
         "nome": "Boleira",
         "imagem": "img/BoleiraVidro.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Boleira.",
-        "categoria": "Cozinha"
+        "categoria": "Cozinha",
+        "disponivel": false
     },
     {
         "nome": "Panela De Arroz",
