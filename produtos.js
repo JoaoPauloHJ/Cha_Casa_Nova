@@ -6,7 +6,8 @@ const produtos = [
         "nome": "Jogo de Tapetes",
         "imagem": "img/jogotapete1.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Jogo%20de%20Tapetes.",
-        "categoria": "Decoração"
+        "categoria": "Decoração",
+        "disponivel": false
     },
     {
         "nome": "Liquidificador",
@@ -91,7 +92,8 @@ const produtos = [
         "nome": "Faqueiro Buzios",
         "imagem": "../img/faqueirobuzios.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Faqueiro%2024%20Pe%C3%A7as.",
-        "categoria": "Cozinha"
+        "categoria": "Cozinha",
+        "disponivel": false
     },
     {
         "nome": "Kit Pote Hermeticos",
@@ -424,7 +426,8 @@ const produtos = [
         "nome": "Chaleira",
         "imagem": "img/Chaleira.png",
         "whatsapp": "https://wa.me/5534996920066/?text=Ol%C3%A1,%20gostaria%20de%20reservar%20esse%20presente%20-%20Chaleira.",
-        "categoria": "Cozinha"
+        "categoria": "Cozinha",
+        "disponivel": false
     },
     {
         "nome": "Mesa De Jantar",
